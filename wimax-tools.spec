@@ -1,7 +1,7 @@
 Summary:	Low level user space tools for the Linux WiMAX stack
 Name:		wimax-tools
 Version:	1.4.4
-Release:	1
+Release:	2
 License:	BSD
 Group:		Networking/Admin
 # http://www.linuxwimax.org/Download
