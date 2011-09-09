@@ -1,0 +1,4 @@
+- pl
+- removed INSTALL from doc (useless in binary package)
+- requires libnl-1
+- release 3
