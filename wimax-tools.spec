@@ -14,6 +14,7 @@ BuildRequires:	glib2-devel >= 1:2.14
 BuildRequires:	libnl1-devel >= 1.0-0pre7
 BuildRequires:	linux-libc-headers >= 7:2.6.31
 BuildRequires:	pkgconfig
+Requires:	glib2 >= 1:2.14
 Requires:	libwimaxll = %{version}-%{release}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
