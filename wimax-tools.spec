@@ -2,12 +2,13 @@ Summary:	Low level user space tools for the Linux WiMAX stack
 Summary(pl.UTF-8):	Niskopoziomowe narzędzia przestrzeni użytkownika do stosu WiMAX Linuksa
 Name:		wimax-tools
 Version:	1.4.4
-Release:	3
+Release:	4
 License:	BSD
 Group:		Networking/Admin
 # http://www.linuxwimax.org/Download
 Source0:	%{name}-%{version}.tar.gz
 # Source0-md5:	6acd0e6971952a761c98e9b4c65e6b4e
+Patch0:		format-security.patch
 URL:		http://www.linuxwimax.org/
 BuildRequires:	doxygen
 BuildRequires:	glib2-devel >= 1:2.14
@@ -64,6 +65,7 @@ Statyczna biblioteka niskopoziomowa WiMAX.
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
 %configure
